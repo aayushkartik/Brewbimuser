@@ -5,7 +5,7 @@ const cookieParser = require('cookieParser');
 const userRouter = require('./Routes/userRouter');
 const app = express();
 app.use(cors({
-    "origin": "*",
+    "origin": "*", // write here the path or url at which frontend is hosted
     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
     "preflightContinue": false,
     "optionsSuccessStatus": 204,
